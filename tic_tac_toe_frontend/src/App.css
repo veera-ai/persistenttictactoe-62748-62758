@@ -29,6 +29,52 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Kavia theme / highlight overrides */
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #ffca28;
+  --accent-color: #43a047;
+}
+
+/* Button/Utility styles */
+.btn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--button-bg, #1976d2);
+  color: var(--button-text, #fff);
+  margin: 2px 4px 2px 0;
+  box-shadow: 0 2px 6px #0001;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  min-width: 66px;
+}
+.btn-large {
+  font-size: 17px;
+  padding: 12px 22px;
+}
+.btn:active {
+  transform: scale(0.98);
+  background: #0056b3;
+}
+
+/* Container styling */
+.container {
+  background: var(--bg-secondary);
+  border-radius: 14px;
+  box-shadow: 0px 3px 16px #0001;
+  padding: 24px 16px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+ul, li { margin: 0; padding: 0; }
+
+/* Custom Board etc. can use further component-specific CSS */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
